@@ -1,9 +1,8 @@
 import angular from 'angular';
-import indexRouteModule from 'app/routes/index/index.route';
+import routesModule from './routes';
 
 var myApp = angular.module('openSauceApp', [
-  'ngRoute',
-  indexRouteModule.name
+  routesModule.name
 ]);
 
 angular.element(document).ready(function() {
