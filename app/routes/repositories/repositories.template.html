@@ -1,1 +1,8 @@
 {{ ctrl.name }}
+
+<ul>
+  <li ng-repeat="repo in ctrl.repos">
+    <h4>{{ repo.name }}</h4>
+    <p>{{ repo.description }}</p>
+  </li>
+</ul>
